@@ -1,43 +1,46 @@
 # Heatlh-tech-IoT-Device-Project3-KL
 
+Health IoT Device – Pulse Wave Project
 Overview
 
-This project is a Health Monitoring IoT Device designed to collect, process, and display vital health data in real time. The device integrates multiple sensors and IoT capabilities to make health monitoring more accessible and efficient.
+This repository contains the design, code, and documentation for a Health IoT device that monitors pulse and temperature, sends data to the cloud, and enables visualization through ThingSpeak and MIT App Inventor.
 
+The project integrates hardware, IoT connectivity, and app development to create a portable health monitoring solution.
+
+Repository Contents
+File / Folder	Description
+3D casing.zip	3D casing design files for the device (all angles)
+Bill of Material - Sheet1.csv	Complete Bill of Materials (components list)
+Copy of Pulse wave Flowchart.drawio.png	Flowchart showing the IoT data flow from sensors to app
+Pulse Wave.drawio	Schematic diagram of the hardware connections
+Pulse_Wave_code.ino	Arduino/ESP32 source code for the IoT device
+README.md	Project overview and documentation (this file)
 Features
 
-Pulse Sensor – Monitors heart rate and sends readings to the system.
+Heart rate measurement using a pulse sensor
 
-Temperature Sensor (MLX90614) – Measures body temperature accurately.
+Temperature measurement using MLX90614 sensor
 
-LCD Display – Displays live sensor data for quick reference.
+Live data display on LCD
 
-WiFi Connectivity (ESP32) – Sends data to ThingSpeak/cloud for storage and analysis.
+IoT connectivity via ESP32 to ThingSpeak
 
-Portable Power – Can run on a rechargeable LiPo battery.
+Cloud data retrieval and visualization in MIT App Inventor
 
-Components Used
+Getting Started
+Requirements
 
-ESP32 (C3 SuperMini)
+ESP32 (C3 SuperMini or equivalent)
 
 Pulse Sensor
 
-DFRobot MLX90614 (Infrared temperature sensor)
+MLX90614 Temperature Sensor
 
 I2C LCD Display
 
-LiPo Battery + Charger module
+LiPo Battery and Charger Module
 
-Push Button + basic circuit elements (resistors, wires, etc.)
-
-Setup & Installation
-
-Clone the repository
-
-git clone https://github.com/yourusername/Health-IoT-Device.git
-
-
-Install Arduino libraries
+Arduino IDE with the following libraries:
 
 PulseSensor Playground
 
@@ -47,40 +50,46 @@ DFRobot_MLX90614
 
 Wire
 
-Open the code in Arduino IDE / PlatformIO
+Setup
 
-Select ESP32 Board
+Clone this repository:
 
-Connect your ESP32 and upload the code
+git clone https://github.com/yourusername/Health-IoT-Device.git
 
-Configure WiFi & ThingSpeak
 
-Update ssid, password, and ThingSpeak API_KEY in the code
+Open Pulse_Wave_code.ino in Arduino IDE.
 
-Run the device
+Install required libraries.
 
-Power on the device
+Update WiFi credentials and ThingSpeak API key in the code.
 
-Read live data on the LCD and monitor cloud updates on ThingSpeak
+Upload the code to the ESP32.
 
-Data Visualization
+Documentation
+Flowchart
 
-All collected data can be viewed on the ThingSpeak dashboard with real-time graphs for:
+The following flowchart explains how data moves from the sensors through the ESP32, into ThingSpeak, and finally into the MIT App Inventor application:
 
-Heart Rate (BPM)
+Schematic
 
-Body Temperature (°C)
+The schematic shows the wiring and hardware connections for the pulse sensor, temperature sensor, LCD, and ESP32:
 
-Prototype
+3D Design
 
-(Insert images of your IoT box, wiring, and LCD output here)
+See 3D casing.zip for all casing design files (exported views and CAD).
 
-Future Improvements
+Bill of Materials
 
-Adding SpO2 (Oxygen Level) sensor
+See Bill of Material - Sheet1.csv for the full list of components.
 
-Mobile app integration for easier access
+Future Work
 
-Better power optimization for longer battery life
+Add SpO2 sensor for oxygen level monitoring
 
-Contributing
+Develop a dedicated mobile app (beyond MIT App Inventor)
+
+Optimize power consumption for longer battery life
+
+License
+
+This project is licensed under the MIT License.
