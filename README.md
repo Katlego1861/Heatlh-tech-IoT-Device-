@@ -32,7 +32,7 @@ The project integrates hardware, IoT connectivity, and app development to create
 
 
 ### Hardware Requirements 
-- ESP32 (C3 SuperMini or equivalent)  
+- ESP32 
 - Pulse Sensor  
 - MLX90614 Temperature Sensor  
 - I2C LCD Display  
@@ -49,8 +49,6 @@ The project integrates hardware, IoT connectivity, and app development to create
 - Onshape (for CAD modifications) 
 ---
 
-## Project Preview
-![Project Image](https://github.com/Katlego1861/RBN-Health-tech-IoT-device/blob/main/Pulse_Wave_Schematic.png) 
 
 ## Author
 Katlego Legari
