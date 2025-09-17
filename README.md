@@ -11,13 +11,13 @@ The project integrates hardware, IoT connectivity, and app development to create
 
 | File / Folder                          | Description                                              |
 |----------------------------------------|----------------------------------------------------------|
-| **3D casing.zip**                      | 3D casing design files for the device (all angles)       |
-| **Bill of Material - Sheet1.csv**      | Complete Bill of Materials (components list)             |
-| **Copy of Pulse wave Flowchart.drawio.png** | Flowchart showing the IoT data flow from sensors to app |
-| **Pulse_Wave_Schematic.png**           | Exported schematic diagram of hardware connections       |
-| **Pulse Wave.drawio**                  | Editable schematic file (source)                        |
-| **Pulse_Wave_code.ino**                | Arduino/ESP32 source code for the IoT device             |
-| **README.md**                          | Project overview and documentation (this file)           |
+| '3D casing.zip'                      | 3D casing design files for the device (all angles)       |
+| 'Bill of Material - Sheet1.csv'      | Complete Bill of Materials (components list)             |
+| 'Copy of Pulse wave Flowchart.drawio.png' | Flowchart showing the IoT data flow from sensors to app |
+| 'Pulse_Wave_Schematic.png'         | Exported schematic diagram of hardware connections       |
+| 'Pulse Wave.drawio'                  | Editable schematic file (source)                        |
+| 'Pulse_Wave_code.ino'               | Arduino/ESP32 source code for the IoT device             |
+| 'README.md'                         | Project overview and documentation (this file)           |
 
 ---
 
@@ -31,7 +31,7 @@ The project integrates hardware, IoT connectivity, and app development to create
 ---
 
 
-### Requirements  
+### Hardware Requirements 
 - ESP32 (C3 SuperMini or equivalent)  
 - Pulse Sensor  
 - MLX90614 Temperature Sensor  
@@ -41,11 +41,16 @@ The project integrates hardware, IoT connectivity, and app development to create
   - PulseSensor Playground  
   - ThingSpeak  
   - DFRobot_MLX90614  
-  - Wire  
-
+  - Wire
+---
+### Software Requirements
+- [Arduino IDE](https://www.arduino.cc/en/software)  
+- (Optional) [TinkerCAD](https://www.tinkercad.com/) for simulation  
+- Onshape (for CAD modifications) 
 ---
 
 ## Project Preview
+![Project Image](Pulse_Wave_Schematic.png) 
 
 ## Author
 Katlego Legari
